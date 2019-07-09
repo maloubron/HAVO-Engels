@@ -97,12 +97,12 @@
 		5D67805F22D355EB00B2D26D /* HAVO Engels */ = {
 			isa = PBXGroup;
 			children = (
-				5D67806022D355EB00B2D26D /* AppDelegate.swift */,
-				5D67806222D355EB00B2D26D /* ViewController.swift */,
+				5D67809122D4858500B2D26D /* supporting files */,
+				5D67809022D3882E00B2D26D /* Controller */,
+				5D67808F22D3882700B2D26D /* Model */,
+				5D67808E22D3881C00B2D26D /* View */,
 				5D67806422D355EB00B2D26D /* Main.storyboard */,
 				5D67806722D355EC00B2D26D /* Assets.xcassets */,
-				5D67806922D355EC00B2D26D /* LaunchScreen.storyboard */,
-				5D67806C22D355EC00B2D26D /* Info.plist */,
 			);
 			path = "HAVO Engels";
 			sourceTree = "<group>";
@@ -123,6 +123,38 @@
 				5D67808222D355EC00B2D26D /* Info.plist */,
 			);
 			path = "HAVO EngelsUITests";
+			sourceTree = "<group>";
+		};
+		5D67808E22D3881C00B2D26D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D67808F22D3882700B2D26D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D67809022D3882E00B2D26D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D67806222D355EB00B2D26D /* ViewController.swift */,
+				5D67806022D355EB00B2D26D /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5D67809122D4858500B2D26D /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				5D67806C22D355EC00B2D26D /* Info.plist */,
+				5D67806922D355EC00B2D26D /* LaunchScreen.storyboard */,
+			);
+			path = "supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
