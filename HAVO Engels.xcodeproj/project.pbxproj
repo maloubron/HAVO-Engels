@@ -102,6 +102,7 @@
 				5D67808F22D3882700B2D26D /* Model */,
 				5D67808E22D3881C00B2D26D /* View */,
 				5D67806422D355EB00B2D26D /* Main.storyboard */,
+				5D67806922D355EC00B2D26D /* LaunchScreen.storyboard */,
 				5D67806722D355EC00B2D26D /* Assets.xcassets */,
 			);
 			path = "HAVO Engels";
@@ -152,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				5D67806C22D355EC00B2D26D /* Info.plist */,
-				5D67806922D355EC00B2D26D /* LaunchScreen.storyboard */,
 			);
 			path = "supporting files";
 			sourceTree = "<group>";
