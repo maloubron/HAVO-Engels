@@ -14,6 +14,7 @@
 		5D67806B22D355EC00B2D26D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D67806922D355EC00B2D26D /* LaunchScreen.storyboard */; };
 		5D67807622D355EC00B2D26D /* HAVO_EngelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67807522D355EC00B2D26D /* HAVO_EngelsTests.swift */; };
 		5D67808122D355EC00B2D26D /* HAVO_EngelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67808022D355EC00B2D26D /* HAVO_EngelsUITests.swift */; };
+		5D67809322D511B300B2D26D /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67809222D511B300B2D26D /* Questions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5D67807C22D355EC00B2D26D /* HAVO EngelsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HAVO EngelsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D67808022D355EC00B2D26D /* HAVO_EngelsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAVO_EngelsUITests.swift; sourceTree = "<group>"; };
 		5D67808222D355EC00B2D26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D67809222D511B300B2D26D /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				5D67806422D355EB00B2D26D /* Main.storyboard */,
 				5D67806922D355EC00B2D26D /* LaunchScreen.storyboard */,
 				5D67806722D355EC00B2D26D /* Assets.xcassets */,
+				5D67806C22D355EC00B2D26D /* Info.plist */,
 			);
 			path = "HAVO Engels";
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 		5D67808F22D3882700B2D26D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5D67809222D511B300B2D26D /* Questions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,7 +156,6 @@
 		5D67809122D4858500B2D26D /* supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				5D67806C22D355EC00B2D26D /* Info.plist */,
 			);
 			path = "supporting files";
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D67809322D511B300B2D26D /* Questions.swift in Sources */,
 				5D67806322D355EB00B2D26D /* ViewController.swift in Sources */,
 				5D67806122D355EB00B2D26D /* AppDelegate.swift in Sources */,
 			);
