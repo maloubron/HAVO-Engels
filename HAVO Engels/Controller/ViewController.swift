@@ -15,23 +15,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionlabel: UILabel!
     @IBOutlet weak var scorelabel: UILabel!
     @IBOutlet weak var progresslabel: UILabel!
-    @IBAction func submitlabel(_ sender: Any) {
-    }
+    @IBOutlet weak var answerlabel: UITextField!
     
     
     // This gets called when the UIViewController is loaded into memory when the app starts
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //let firstQuestion = allQuestions.list[0]
-        //questionlabel.text = firstQuestion.questionText
-        // Do any additional setup after loading the view.
         let sizeWords = allQuestions.list.count //number of items in list (words)
         let randomNumber = Int.random(in: 0 ..< sizeWords) //generates a random number for the position of a word in the dictionary
         let randomQuestion = allQuestions.list[randomNumber] //gets random word from dictionary
-        questionlabel.text = randomQuestion.questionText //displays now the question in the
+        //let randomAnswer = randomQuestion.answer
+        questionlabel.text = randomQuestion.questionText //displays now the question in the questionlabel
+    }
+    
+    @IBAction func submitlabel(_ sender: Any) {
+        let questionInLabel = questionlabel.text
+        //let fittedAnswer = find(value: questionInLabel, in: allQuestions)
+        if "h" == answerlabel.text {
+            print(allQuestions)
+        } else {
+            print("false")
+            print(allQuestions)
+        }
     }
     
     
 }
+
+
 

@@ -51,11 +51,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your answer here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ibE-iY-VRA">
+                                <rect key="frame" x="28" y="318" width="331" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.035294117647058823" green="0.51764705882352935" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="answerlabel" destination="ibE-iY-VRA" id="xwR-h9-E7Q"/>
                         <outlet property="progresslabel" destination="VAh-oT-dyP" id="GGd-uT-wTb"/>
                         <outlet property="questionlabel" destination="3ro-zS-9Dw" id="g23-H7-RDa"/>
                         <outlet property="scorelabel" destination="BzG-m8-aLp" id="3w9-4L-5k0"/>
