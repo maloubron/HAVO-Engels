@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var questionlabel: UILabel!
     @IBOutlet weak var scorelabel: UILabel!
-    @IBOutlet weak var progressbar: UIView!
     @IBOutlet weak var progresslabel: UILabel!
+    @IBAction func submitlabel(_ sender: Any) {
+    }
     
     
     // This gets called when the UIViewController is loaded into memory when the app starts
