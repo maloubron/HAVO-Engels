@@ -8,12 +8,7 @@
 
 import Foundation
 
-class Question {
-    let questionText : String
-    let answer : String
-    
-    init(text: String, correctAnswer: String) {
-        questionText = text
-        answer = correctAnswer
-    }
-}
+var dict : [String : String] = ["hello" : "hoi", "bye" : "doei", "no" : "nee", "yes" : "ja"]
+
+
+

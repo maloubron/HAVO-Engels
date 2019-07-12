@@ -8,13 +8,9 @@
 
 import Foundation
 
-class QuestionBank {
-    var list = [Question]()
-    init(){
-        list.append(Question(text: "hello", correctAnswer: "hallo"))
-        list.append(Question(text: "yes", correctAnswer: "ja"))
-        list.append(Question(text: "no", correctAnswer: "nee"))
-        list.append(Question(text: "bye", correctAnswer: "doei"))
-    }
+//class QuestionBank {
+//    var dict : [String : String] = ["hello" : "hoi", "bye" : "doei", "no" : "nee", "yes" : "ja"]
+  //  init(){
+    //}
     
-}
+//}
