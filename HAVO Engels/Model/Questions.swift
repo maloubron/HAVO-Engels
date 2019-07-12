@@ -8,7 +8,7 @@
 
 import Foundation
 
-var dict : [String : String] = ["hello" : "hoi", "bye" : "doei", "no" : "nee", "yes" : "ja"]
+var dict : [String : String] = ["hello" : "hallo", "bye" : "doei", "no" : "nee", "yes" : "ja"]
 
 
 

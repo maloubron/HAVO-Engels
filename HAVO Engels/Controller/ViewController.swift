@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontAwesomeKit
 
 class ViewController: UIViewController {
     
@@ -27,11 +28,12 @@ class ViewController: UIViewController {
         let randomQuestion = Array(dict.keys)[randomNumber] //gets random word from dictionary
         //let randomAnswer = randomQuestion.answer
         questionlabel.text = randomQuestion //displays now the question in the questionlabel
+        questionlabel.font = UIFont(name: "Helvetica-Bold", size: 15.0) //installed cocoapods from fontawesome
     }
     
     @IBAction func submitlabel(_ sender: Any) {
         let questionInLabel = questionlabel.text
-        let answer = dict[questionInLabel!] //check if the ! is in correct use here
+        let answer = dict[questionInLabel!] //check if the ! is in correct use here. otherwise error : Cannot subscript a value of type '[String : String]' with an index of type 'String?'
         //let fittedAnswer = find(value: questionInLabel, in: allQuestions)
         if answer == answerlabel.text {
             print("correct")

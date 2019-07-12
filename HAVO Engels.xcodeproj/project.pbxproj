@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0680AA54AAD2AC467FB29810 /* Pods_HAVO_EngelsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F29275325F8B29DC0A54AAF /* Pods_HAVO_EngelsUITests.framework */; };
+		13008BB4A2E6F513B52620EF /* Pods_HAVO_Engels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456EE3D9BB6779FCD2016435 /* Pods_HAVO_Engels.framework */; };
+		1808BED78643AB51C0092086 /* Pods_HAVO_EngelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E61B3BB9AD81F3B51975F3 /* Pods_HAVO_EngelsTests.framework */; };
 		5D67806122D355EB00B2D26D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67806022D355EB00B2D26D /* AppDelegate.swift */; };
 		5D67806322D355EB00B2D26D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67806222D355EB00B2D26D /* ViewController.swift */; };
 		5D67806622D355EB00B2D26D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D67806422D355EB00B2D26D /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AFAD93EEBFF2FF40DD02EDF /* Pods-HAVO EngelsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAVO EngelsUITests.release.xcconfig"; path = "Target Support Files/Pods-HAVO EngelsUITests/Pods-HAVO EngelsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B283884F4FBD1EE32C9D46A /* Pods-HAVO EngelsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAVO EngelsUITests.debug.xcconfig"; path = "Target Support Files/Pods-HAVO EngelsUITests/Pods-HAVO EngelsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		456EE3D9BB6779FCD2016435 /* Pods_HAVO_Engels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAVO_Engels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D67805D22D355EB00B2D26D /* HAVO Engels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HAVO Engels.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D67806022D355EB00B2D26D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D67806222D355EB00B2D26D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		5D67808222D355EC00B2D26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D67809222D511B300B2D26D /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		5D67809422D5DB4900B2D26D /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		6245A9B360A1F2BE9E9378F8 /* Pods-HAVO EngelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAVO EngelsTests.release.xcconfig"; path = "Target Support Files/Pods-HAVO EngelsTests/Pods-HAVO EngelsTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F29275325F8B29DC0A54AAF /* Pods_HAVO_EngelsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAVO_EngelsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9548199DB37622325CEAF997 /* Pods-HAVO Engels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAVO Engels.release.xcconfig"; path = "Target Support Files/Pods-HAVO Engels/Pods-HAVO Engels.release.xcconfig"; sourceTree = "<group>"; };
+		A137740366B33CFA6E9C95EF /* Pods-HAVO Engels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAVO Engels.debug.xcconfig"; path = "Target Support Files/Pods-HAVO Engels/Pods-HAVO Engels.debug.xcconfig"; sourceTree = "<group>"; };
+		B4E61B3BB9AD81F3B51975F3 /* Pods_HAVO_EngelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAVO_EngelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FD0AFEF5457E67DB8DEDBB /* Pods-HAVO EngelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAVO EngelsTests.debug.xcconfig"; path = "Target Support Files/Pods-HAVO EngelsTests/Pods-HAVO EngelsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13008BB4A2E6F513B52620EF /* Pods_HAVO_Engels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1808BED78643AB51C0092086 /* Pods_HAVO_EngelsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0680AA54AAD2AC467FB29810 /* Pods_HAVO_EngelsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				5D67807422D355EC00B2D26D /* HAVO EngelsTests */,
 				5D67807F22D355EC00B2D26D /* HAVO EngelsUITests */,
 				5D67805E22D355EB00B2D26D /* Products */,
+				89D3A688AAD035131058E28F /* Pods */,
+				84DAA46750CC459E9209F4A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +180,30 @@
 			path = "supporting files";
 			sourceTree = "<group>";
 		};
+		84DAA46750CC459E9209F4A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				456EE3D9BB6779FCD2016435 /* Pods_HAVO_Engels.framework */,
+				B4E61B3BB9AD81F3B51975F3 /* Pods_HAVO_EngelsTests.framework */,
+				7F29275325F8B29DC0A54AAF /* Pods_HAVO_EngelsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89D3A688AAD035131058E28F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A137740366B33CFA6E9C95EF /* Pods-HAVO Engels.debug.xcconfig */,
+				9548199DB37622325CEAF997 /* Pods-HAVO Engels.release.xcconfig */,
+				F5FD0AFEF5457E67DB8DEDBB /* Pods-HAVO EngelsTests.debug.xcconfig */,
+				6245A9B360A1F2BE9E9378F8 /* Pods-HAVO EngelsTests.release.xcconfig */,
+				2B283884F4FBD1EE32C9D46A /* Pods-HAVO EngelsUITests.debug.xcconfig */,
+				0AFAD93EEBFF2FF40DD02EDF /* Pods-HAVO EngelsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D67808522D355EC00B2D26D /* Build configuration list for PBXNativeTarget "HAVO Engels" */;
 			buildPhases = (
+				E25BFFDAE90A86D3145E17D6 /* [CP] Check Pods Manifest.lock */,
 				5D67805922D355EB00B2D26D /* Sources */,
 				5D67805A22D355EB00B2D26D /* Frameworks */,
 				5D67805B22D355EB00B2D26D /* Resources */,
+				6095170B71DAA47F7425D04B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D67808822D355EC00B2D26D /* Build configuration list for PBXNativeTarget "HAVO EngelsTests" */;
 			buildPhases = (
+				925CB156B2DEF4C3F46F0A38 /* [CP] Check Pods Manifest.lock */,
 				5D67806D22D355EC00B2D26D /* Sources */,
 				5D67806E22D355EC00B2D26D /* Frameworks */,
 				5D67806F22D355EC00B2D26D /* Resources */,
@@ -205,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D67808B22D355EC00B2D26D /* Build configuration list for PBXNativeTarget "HAVO EngelsUITests" */;
 			buildPhases = (
+				B0FB3ED5629231664632B69F /* [CP] Check Pods Manifest.lock */,
 				5D67807822D355EC00B2D26D /* Sources */,
 				5D67807922D355EC00B2D26D /* Frameworks */,
 				5D67807A22D355EC00B2D26D /* Resources */,
@@ -288,6 +333,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6095170B71DAA47F7425D04B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAVO Engels/Pods-HAVO Engels-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HAVO Engels/Pods-HAVO Engels-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HAVO Engels/Pods-HAVO Engels-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		925CB156B2DEF4C3F46F0A38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HAVO EngelsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0FB3ED5629231664632B69F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HAVO EngelsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E25BFFDAE90A86D3145E17D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HAVO Engels-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D67805922D355EB00B2D26D /* Sources */ = {
@@ -470,6 +601,7 @@
 		};
 		5D67808622D355EC00B2D26D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A137740366B33CFA6E9C95EF /* Pods-HAVO Engels.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +620,7 @@
 		};
 		5D67808722D355EC00B2D26D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9548199DB37622325CEAF997 /* Pods-HAVO Engels.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +639,7 @@
 		};
 		5D67808922D355EC00B2D26D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5FD0AFEF5457E67DB8DEDBB /* Pods-HAVO EngelsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -527,6 +661,7 @@
 		};
 		5D67808A22D355EC00B2D26D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6245A9B360A1F2BE9E9378F8 /* Pods-HAVO EngelsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +683,7 @@
 		};
 		5D67808C22D355EC00B2D26D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B283884F4FBD1EE32C9D46A /* Pods-HAVO EngelsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,6 +704,7 @@
 		};
 		5D67808D22D355EC00B2D26D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AFAD93EEBFF2FF40DD02EDF /* Pods-HAVO EngelsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
