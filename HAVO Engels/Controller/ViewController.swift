@@ -35,8 +35,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nextWordOutlet.colors = .init(button: .cyan, shadow: .blue)
-        nextWordOutlet.disabledColors = .init(button: .gray, shadow: .darkGray)
+        nextWordOutlet.colors = .init(button: .gray, shadow: .darkGray)
+        //nextWordOutlet.disabledColors = .init(button: .gray, shadow: .darkGray) I dont know what this does
         nextWordOutlet.shadowHeight = 10
         nextWordOutlet.cornerRadius = 8
         nextWordOutlet.depth = 0.5
@@ -44,8 +44,8 @@ class ViewController: UIViewController {
         
         rightword.isHidden = true
         
-        submitOutlet.colors = .init(button: .cyan, shadow: .blue)
-        submitOutlet.disabledColors = .init(button: .gray, shadow: .darkGray)
+        submitOutlet.colors = .init(button: .gray, shadow: .darkGray)
+        //submitOutlet.disabledColors = .init(button: .gray, shadow: .darkGray)
         submitOutlet.shadowHeight = 10
         submitOutlet.cornerRadius = 8
         submitOutlet.depth = 0.5
@@ -76,41 +76,43 @@ class ViewController: UIViewController {
         }
         
     }
-    
-    @IBAction func nextWordButton(_ sender: Any) {
-        rightword.isHidden = true
-        let newWord = randomQuestion((Any).self)
-        questionlabel.text = newWord //sets the label automatically to a new word
-        rightword.text = "" //right word label disappears
-        submitOutlet.isHidden = false
-        nextWordOutlet.isHidden = true
-    }
 
     @IBAction func submitButton(_ sender: Any) {
         
-        let questionInLabel = questionlabel.text
-        let answer = dict[questionInLabel!] //check if the ! is in correct use here. otherwise error : Cannot subscript a value of type '[String : String]' with an index of type 'String?'
-        //let fittedAnswer = find(value: questionInLabel, in: allQuestions)
-        if answer == answerlabel.text {
-            resultlabel.text = "correct"
-            resultlabel.textColor = UIColor.green
+        //First check is submitbutton was set on "Submit" or "next word"
+        if submitOutlet.title(for: .normal) == "Submit" {
+            let questionInLabel = questionlabel.text
+            let answer = dict[questionInLabel!] //check if the ! is in correct use here. otherwise error : Cannot subscript a value of type '[String : String]' with an index of type 'String?'
+            //let fittedAnswer = find(value: questionInLabel, in: allQuestions)
+            //If button was set on Submit check if the answer was correct or not
+            if answer == answerlabel.text {
+                resultlabel.text = "correct"
+                resultlabel.textColor = UIColor.green
+                let newWord = randomQuestion((Any).self)
+                questionlabel.text = newWord //sets the label automatically to a new word
+                score += 1
+                totalAnsweredQuestions += 1
+                updateUI()
+            }
+            else {
+                rightword.isHidden = false
+                submitOutlet.setTitle("Next word", for: .normal)
+                rightword.text = "The correct answer is : \(String(describing: answer!))"
+                resultlabel.text = "wrong"
+                resultlabel.textColor = UIColor.red
+                score -= 1
+                totalAnsweredQuestions += 1
+                updateUI()
+            }
+
+            
+        }
+        //the submitbutton was set on nextword
+        else {
+            rightword.isHidden = true
+            submitOutlet.setTitle("Submit", for: .normal)
             let newWord = randomQuestion((Any).self)
             questionlabel.text = newWord //sets the label automatically to a new word
-            score += 1
-            totalAnsweredQuestions += 1
-            updateUI()
-            
-        } else {
-            rightword.isHidden = false
-            nextWordOutlet.isHidden = false
-            submitOutlet.isHidden = true //makes submit button disappear
-            rightword.text = "The correct answer is : \(String(describing: answer!))"
-            resultlabel.text = "wrong"
-            resultlabel.textColor = UIColor.red
-            score -= 1
-            totalAnsweredQuestions += 1
-            updateUI()
-            
         }
     }
     
