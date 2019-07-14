@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     //UI elements linked to IB actions
     
     @IBOutlet weak var submitOutlet: PressableButton!
-    @IBOutlet weak var nextWordOutlet: PressableButton!
     @IBOutlet weak var questionlabel: UILabel!
     @IBOutlet weak var scorelabel: UILabel!
     @IBOutlet weak var progresslabel: UILabel!
@@ -34,13 +33,6 @@ class ViewController: UIViewController {
     // This gets called when the UIViewController is loaded into memory when the app starts
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        nextWordOutlet.colors = .init(button: .gray, shadow: .darkGray)
-        //nextWordOutlet.disabledColors = .init(button: .gray, shadow: .darkGray) I dont know what this does
-        nextWordOutlet.shadowHeight = 10
-        nextWordOutlet.cornerRadius = 8
-        nextWordOutlet.depth = 0.5
-        nextWordOutlet.isHidden = true
         
         rightword.isHidden = true
         

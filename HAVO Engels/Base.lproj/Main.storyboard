@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rP0-61-Gzs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="KaR-ic-eco">
+            <objects>
+                <viewController id="rP0-61-Gzs" customClass="SecondViewController" customModule="HAVO_Engels" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="adr-an-wDy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9KM-wu-hxg">
+                                <rect key="frame" x="118" y="472" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to next "/>
+                                <connections>
+                                    <action selector="segueButton:" destination="rP0-61-Gzs" eventType="touchUpInside" id="eOg-7Z-ZFq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xya-eK-8u2"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="wordsView" id="yKk-Kd-dxv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AA0-92-KGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-599" y="126"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -62,19 +90,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3d1-JM-pbQ" customClass="PressableButton" customModule="SwiftyButton">
-                                <rect key="frame" x="156" y="413" width="58" height="34"/>
+                                <rect key="frame" x="111" y="412" width="153" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUy-eL-0PR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7A-38-Oqq" customClass="PressableButton" customModule="SwiftyButton">
-                                <rect key="frame" x="138" y="241" width="83" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next word"/>
-                                <connections>
-                                    <action selector="nextWordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KOn-Xm-byV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -83,7 +103,6 @@
                     </view>
                     <connections>
                         <outlet property="answerlabel" destination="ibE-iY-VRA" id="xwR-h9-E7Q"/>
-                        <outlet property="nextWordOutlet" destination="n7A-38-Oqq" id="Xc2-e3-Q3O"/>
                         <outlet property="progresslabel" destination="VAh-oT-dyP" id="GGd-uT-wTb"/>
                         <outlet property="questionlabel" destination="3ro-zS-9Dw" id="g23-H7-RDa"/>
                         <outlet property="resultlabel" destination="KYh-dh-IwD" id="4go-cK-0FV"/>
