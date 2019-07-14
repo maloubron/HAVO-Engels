@@ -40,6 +40,9 @@ class ViewController: UIViewController {
         nextWordOutlet.shadowHeight = 10
         nextWordOutlet.cornerRadius = 8
         nextWordOutlet.depth = 0.5
+        nextWordOutlet.isHidden = true
+        
+        rightword.isHidden = true
         
         submitOutlet.colors = .init(button: .cyan, shadow: .blue)
         submitOutlet.disabledColors = .init(button: .gray, shadow: .darkGray)
@@ -75,11 +78,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nextWordButton(_ sender: Any) {
+        rightword.isHidden = true
         let newWord = randomQuestion((Any).self)
         questionlabel.text = newWord //sets the label automatically to a new word
         rightword.text = "" //right word label disappears
-        //submitButton(Any).isHidden = false
-        //nextWordButton(Any).isHidden = true
+        submitOutlet.isHidden = false
+        nextWordOutlet.isHidden = true
     }
 
     @IBAction func submitButton(_ sender: Any) {
@@ -97,8 +101,9 @@ class ViewController: UIViewController {
             updateUI()
             
         } else {
-            //nextWordButton.isHidden = false
-            //submitButton.isHidden = true //makes the submitButton disappear
+            rightword.isHidden = false
+            nextWordOutlet.isHidden = false
+            submitOutlet.isHidden = true //makes submit button disappear
             rightword.text = "The correct answer is : \(String(describing: answer!))"
             resultlabel.text = "wrong"
             resultlabel.textColor = UIColor.red
