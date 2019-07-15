@@ -7,9 +7,22 @@
 //
 
 import UIKit
+import Firebase
 
 class SecondViewController: UIViewController {
 
+    //user presses logout button
+    @IBAction func logOutButton(_ sender: Any) {
+        
+        do {
+            try Auth.auth().signOut()
+            navigationController?.popToRootViewController(animated: true)
+        }
+        catch {
+            print("There was a error trying to sign out")
+        }
+    }
+    
     @IBAction func segueButton(_ sender: Any) {
         performSegue(withIdentifier: "wordsView", sender: self)
     }

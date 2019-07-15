@@ -7,11 +7,28 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    //signs in an d segue gets triggered
     @IBAction func segueSecondView(_ sender: Any) {
-        performSegue(withIdentifier: "goToSecondView", sender: self)
+        
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            
+            if error != nil {
+                print(error!)
+            }
+            else {
+                print("Login was succesful")
+                self.performSegue(withIdentifier: "goToSecondView", sender: self)
+            }
+        }
     }
     
     override func viewDidLoad() {
