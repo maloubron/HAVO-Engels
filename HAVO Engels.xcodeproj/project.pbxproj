@@ -21,6 +21,9 @@
 		5D67809522D5DB4900B2D26D /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D67809422D5DB4900B2D26D /* QuestionBank.swift */; };
 		5D81BDF322DBB16E002760C3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81BDF222DBB16E002760C3 /* SecondViewController.swift */; };
 		5DB69B0022DBC17200EFF5E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DB69AFF22DBC17200EFF5E2 /* GoogleService-Info.plist */; };
+		5DB69B0222DC79FD00EFF5E2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB69B0122DC79FD00EFF5E2 /* WelcomeViewController.swift */; };
+		5DB69B0422DC7A7600EFF5E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB69B0322DC7A7600EFF5E2 /* LoginViewController.swift */; };
+		5DB69B0622DC7A7F00EFF5E2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB69B0522DC7A7F00EFF5E2 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		5D67809422D5DB4900B2D26D /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		5D81BDF222DBB16E002760C3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5DB69AFF22DBC17200EFF5E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5DB69B0122DC79FD00EFF5E2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5DB69B0322DC7A7600EFF5E2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5DB69B0522DC7A7F00EFF5E2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6245A9B360A1F2BE9E9378F8 /* Pods-HAVO EngelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAVO EngelsTests.release.xcconfig"; path = "Target Support Files/Pods-HAVO EngelsTests/Pods-HAVO EngelsTests.release.xcconfig"; sourceTree = "<group>"; };
 		7F29275325F8B29DC0A54AAF /* Pods_HAVO_EngelsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HAVO_EngelsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9548199DB37622325CEAF997 /* Pods-HAVO Engels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HAVO Engels.release.xcconfig"; path = "Target Support Files/Pods-HAVO Engels/Pods-HAVO Engels.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +181,9 @@
 				5D67806222D355EB00B2D26D /* ViewController.swift */,
 				5D67806022D355EB00B2D26D /* AppDelegate.swift */,
 				5D81BDF222DBB16E002760C3 /* SecondViewController.swift */,
+				5DB69B0122DC79FD00EFF5E2 /* WelcomeViewController.swift */,
+				5DB69B0322DC7A7600EFF5E2 /* LoginViewController.swift */,
+				5DB69B0522DC7A7F00EFF5E2 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -431,9 +440,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB69B0422DC7A7600EFF5E2 /* LoginViewController.swift in Sources */,
 				5D67809322D511B300B2D26D /* Questions.swift in Sources */,
 				5D67809522D5DB4900B2D26D /* QuestionBank.swift in Sources */,
+				5DB69B0622DC7A7F00EFF5E2 /* RegisterViewController.swift in Sources */,
 				5D67806322D355EB00B2D26D /* ViewController.swift in Sources */,
+				5DB69B0222DC79FD00EFF5E2 /* WelcomeViewController.swift in Sources */,
 				5D81BDF322DBB16E002760C3 /* SecondViewController.swift in Sources */,
 				5D67806122D355EB00B2D26D /* AppDelegate.swift in Sources */,
 			);
