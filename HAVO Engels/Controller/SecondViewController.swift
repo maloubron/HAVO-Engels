@@ -9,7 +9,20 @@
 import UIKit
 import Firebase
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let list = ["milk", "honey", "bread", "tacos", "tomatoes"]
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list.count
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = list[indexPath.row]
+        return cell
+    }
+    
 
     //user presses logout button
     @IBAction func logOutButton(_ sender: Any) {
