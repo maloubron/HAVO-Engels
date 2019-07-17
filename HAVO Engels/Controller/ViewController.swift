@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     //global var score
     var score = 0
     var totalAnsweredQuestions = 0
-    
+    var data = "" //this is the cell the user tapped on in the tableview
     
     //UI elements linked to IB actions
     
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     // This gets called when the UIViewController is loaded into memory when the app starts
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         rightword.isHidden = true
         
         submitOutlet.colors = .init(button: .gray, shadow: .darkGray)

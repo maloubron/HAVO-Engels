@@ -9,9 +9,14 @@
 import UIKit
 import Firebase
 
+var myIndex = 0
+
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let list = ["milk", "honey", "bread", "tacos", "tomatoes"]
+    
+    @IBOutlet weak var labelIndex: UILabel!
+    
+    let list = ["Sign out", "quick recap", "level1", "level2", "level3"]
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
@@ -23,6 +28,19 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    //this functin gets executed when a user taps on a certain tableview cell
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row //cell the user tapped on
+        performSegue(withIdentifier: "wordsView", sender: self)
+        //performSegue(withIdentifier: "wordView", sender: self)
+    }
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "wordsView" {
+            let wordViewcontroller = segue.destination as! ViewController
+            wordViewcontroller.data = "\(myIndex)"
+        }
+    }
 
     //user presses logout button
     @IBAction func logOutButton(_ sender: Any) {
@@ -35,6 +53,8 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             print("There was a error trying to sign out")
         }
     }
+
+
     
     @IBAction func segueButton(_ sender: Any) {
         performSegue(withIdentifier: "wordsView", sender: self)
